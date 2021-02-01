@@ -1,13 +1,17 @@
 * {
 	padding: 0;
-	margin: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
 }
 
 #game {
 	width: 400px;
 	height: 500px;
 	border: 1px solid black;
-	margin: auto;
+	margin: 50px auto;
+    border-top: 20px solid brown;
+    position: relative;
 }
 
 #character {
@@ -22,20 +26,35 @@
 
 }
 
-.block {
+.block-left {
 	width: 400px;
 	height: 20px;
 	background-color: black;
 	position: relative;
 	top: 100px; 
-	margin-top: -20px;
+    /* float: left; */
+    margin-top: -20px;
 }
 
-.hole {
+.block-right {
 	width: 40px;
 	height: 20px;
-	background-color: white;
+	background-color: rgb(0, 0, 0);
 	position: relative;
 	top: 100px;  
-	margin-top: -20px;
+    float: right;
+    margin-top: -20px;
+}
+
+.background-image {
+	position: absolute;
+	width: 400px;
+	height: 500px;
+}
+
+.right-control {
+	background: cornflowerblue;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
 }
